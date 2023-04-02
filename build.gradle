@@ -1,0 +1,55 @@
+plugins {
+    id "application"
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+group 'com.example'
+version '1.0-SNAPSHOT'
+apply plugin : "java"
+
+ext {
+   javaMainClass = "example.Main"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+dependencies {
+    implementation 'com.google.dagger:dagger:2.45'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.45'
+    implementation 'org.jetbrains:annotations:24.0.1'
+
+
+    testImplementation(platform("org.junit:junit-bom:5.9.2"))
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher") {
+        because("Only needed to run tests in a version of IntelliJ IDEA that bundles older versions")
+    }
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("org.junit.vintage:junit-vintage-engine")
+
+
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.12.4'
+
+}
+shadowJar {
+    archiveBaseName = 'my-project'
+    archiveVersion = null
+    archiveClassifier = 'all'
+    dependencies {
+        exclude(dependency('com.example:example-library'))
+    }
+    manifest {
+        attributes 'Main-Class': 'com.example.Main'
+    }
+}
+

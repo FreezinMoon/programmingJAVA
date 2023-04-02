@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.managers.InvokerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-26T21:56:09" hostname="jasos-NBLK-WAX9X" time="0.154">
+  <properties/>
+  <testcase name="testExecuteCommand()" classname="example.managers.InvokerTest" time="0.146"/>
+  <testcase name="testExecuteCommandNoSuchCommand()" classname="example.managers.InvokerTest" time="0.005"/>
+  <system-out><![CDATA[No such command
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

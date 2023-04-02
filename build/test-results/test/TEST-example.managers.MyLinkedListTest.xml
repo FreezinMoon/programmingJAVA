@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.managers.MyLinkedListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-26T21:56:09" hostname="jasos-NBLK-WAX9X" time="0.091">
+  <properties/>
+  <testcase name="testAdd()" classname="example.managers.MyLinkedListTest" time="0.009"/>
+  <testcase name="testGet()" classname="example.managers.MyLinkedListTest" time="0.002"/>
+  <testcase name="testGetCreationDate()" classname="example.managers.MyLinkedListTest" time="0.002"/>
+  <testcase name="testClear()" classname="example.managers.MyLinkedListTest" time="0.002"/>
+  <testcase name="testSize()" classname="example.managers.MyLinkedListTest" time="0.001"/>
+  <testcase name="testForEach()" classname="example.managers.MyLinkedListTest" time="0.023"/>
+  <testcase name="testGetType()" classname="example.managers.MyLinkedListTest" time="0.002"/>
+  <testcase name="testRemoveIf()" classname="example.managers.MyLinkedListTest" time="0.022"/>
+  <testcase name="testGetMax()" classname="example.managers.MyLinkedListTest" time="0.004"/>
+  <testcase name="testGetMin()" classname="example.managers.MyLinkedListTest" time="0.003"/>
+  <testcase name="testRemove()" classname="example.managers.MyLinkedListTest" time="0.002"/>
+  <testcase name="testIterator()" classname="example.managers.MyLinkedListTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

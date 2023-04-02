@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"example"},{"l":"example.managers"},{"l":"example.myCommands"},{"l":"example.objects"},{"l":"example.ripManager"}];updateSearchResults();
